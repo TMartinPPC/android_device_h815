@@ -278,20 +278,6 @@
         <item>lte:4094,87380,2560000,4096,16384,1220608</item>
     </string-array>
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <!-- If the DUN connection for this CDMA device supports more than just DUN -->
-    <!-- traffic you should list them here. -->
-    <!-- If this device is not CDMA this is ignored.  If this list is empty on -->
-    <!-- a DUN-requireing CDMA device, the DUN APN will support -->
-    <!-- just DUN. -->
-    <string-array translatable="false" name="config_cdma_dun_supported_types">
-        <item>"default"</item>
-        <item>"dun"</item>
-        <item>"mms"</item>
-        <item>"supl"</item>
-    </string-array>
-
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
