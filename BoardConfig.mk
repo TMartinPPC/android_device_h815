@@ -184,10 +184,6 @@ BOARD_NFC_DEVICE := "/dev/pn547"
 BOARD_HAL_STATIC_LIBRARIES := \
     libhealthd.msm8992
 
-
-# Time services
-BOARD_USES_QC_TIME_SERVICES := true
-
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
   ifeq ($(TARGET_BUILD_VARIANT),user)
