@@ -184,14 +184,10 @@ BOARD_NFC_DEVICE := "/dev/pn547"
 BOARD_HAL_STATIC_LIBRARIES := \
     libhealthd.msm8992
 
-# Enable dex-preoptimization to speed up first boot sequence
-ifeq ($(HOST_OS),linux)
-  ifeq ($(TARGET_BUILD_VARIANT),user)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-    endif
-  endif
-endif
+# Disable preopt until desktop rootfs size is optimized
+#ifeq ($(TARGET_BUILD_VARIANT),user)
+#  WITH_DEXPREOPT := true
+#endif
 
 # inherit from the proprietary version
 -include vendor/lge/h815/BoardConfigVendor.mk
