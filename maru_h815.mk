@@ -15,6 +15,7 @@
 # limitations under the License.
 #
 $(call inherit-product, device/lge/h815/device.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 $(call inherit-product, vendor/maruos/device-maru.mk)
 $(call inherit-product, vendor/maruos/BoardConfigVendor.mk)
 
